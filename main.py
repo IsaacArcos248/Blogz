@@ -70,7 +70,7 @@ def index_2():
 def display():
     if request.method == "GET":
         blog_id = request.args.get('id')
-        return(render_template('record.html', title ={Blog.title},blog_id = blog_id ))
+        return(render_template('record.html', title = title ,blog_id = blog_id ))
 
 
 
